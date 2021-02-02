@@ -1,0 +1,12 @@
+## 2020-09-26 19:14:31
+gct.directory:	D:/MyWorks/ssGSEA/Matlab/Yeast/ssGSEA/R/gct/
+output.directory:	D:/MyWorks/ssGSEA/Matlab/Yeast/ssGSEA/R/out/
+gene.set.database:	D:/MyWorks/ssGSEA/Matlab/Yeast/ssGSEA/R/gmt/genesetsYeast.gmt
+sample.norm.type:	none
+weight:	0
+statistic:	area.under.RES
+output.score.type	NES
+nperm:	1000
+min.overlap:	3
+correl.type:	z.score
+run.parallel:	TRUE

@@ -1,0 +1,83 @@
+## 2020-09-26 19:14:32 
+MSigDB import: 0.01700211 
+Testing 80 gene sets:
+Gluconeogenesis 
+sce00010  Glycolysis 
+sce00020  Citrate cycle (TCA cycle) 
+sce00030  Pentose phosphate pathway 
+sce00040  Pentose and glucuronate interconversions 
+sce00051  Fructose and mannose metabolism 
+sce00052  Galactose metabolism 
+sce00061  Fatty acid biosynthesis 
+sce00062  Fatty acid elongation 
+sce00071  Fatty acid degradation 
+sce00100  Steroid biosynthesis 
+sce00130  Ubiquinone and other terpenoid-quinone biosynthesis 
+sce00190  Oxidative phosphorylation 
+sce00220  Arginine biosynthesis 
+sce00230  Purine metabolism 
+sce00240  Pyrimidine metabolism 
+sce00250  Alanine, aspartate and glutamate metabolism 
+sce00260  Glycine, serine and threonine metabolism 
+sce00261  Monobactam biosynthesis 
+sce00270  Cysteine and methionine metabolism 
+sce00280  Valine, leucine and isoleucine degradation 
+sce00290  Valine, leucine and isoleucine biosynthesis 
+sce00300  Lysine biosynthesis 
+sce00310  Lysine degradation 
+sce00330  Arginine and proline metabolism 
+sce00340  Histidine metabolism 
+sce00350  Tyrosine metabolism 
+sce00360  Phenylalanine metabolism 
+sce00380  Tryptophan metabolism 
+sce00400  Phenylalanine, tyrosine and tryptophan biosynthesis 
+sce00410  beta-Alanine metabolism 
+sce00430  Taurine and hypotaurine metabolism 
+sce00440  Phosphonate and phosphinate metabolism 
+sce00450  Selenocompound metabolism 
+sce00480  Glutathione metabolism 
+sce00500  Starch and sucrose metabolism 
+sce00510  N-Glycan biosynthesis 
+sce00513  Various types of N-glycan biosynthesis 
+sce00514  Other types of O-glycan biosynthesis 
+sce00515  Mannose type O-glycan biosynthesis 
+sce00520  Amino sugar and nucleotide sugar metabolism 
+sce00561  Glycerolipid metabolism 
+sce00562  Inositol phosphate metabolism 
+sce00563  Glycosylphosphatidylinositol (GPI)-anchor biosynthesis 
+sce00564  Glycerophospholipid metabolism 
+sce00600  Sphingolipid metabolism 
+sce00620  Pyruvate metabolism 
+sce00630  Glyoxylate and dicarboxylate metabolism 
+sce00640  Propanoate metabolism 
+sce00650  Butanoate metabolism 
+sce00660  C5-Branched dibasic acid metabolism 
+sce00670  One carbon pool by folate 
+sce00730  Thiamine metabolism 
+sce00740  Riboflavin metabolism 
+sce00750  Vitamin B6 metabolism 
+sce00760  Nicotinate and nicotinamide metabolism 
+sce00770  Pantothenate and CoA biosynthesis 
+sce00780  Biotin metabolism 
+sce00790  Folate biosynthesis 
+sce00860  Porphyrin and chlorophyll metabolism 
+sce00900  Terpenoid backbone biosynthesis 
+sce00910  Nitrogen metabolism 
+sce00920  Sulfur metabolism 
+sce00970  Aminoacyl-tRNA biosynthesis 
+sce01040  Biosynthesis of unsaturated fatty acids 
+sce01110  Biosynthesis of secondary metabolites 
+sce01130  Biosynthesis of antibiotics 
+sce01200  Carbon metabolism 
+sce01210  2-Oxocarboxylic acid metabolism 
+sce01212  Fatty acid metabolism 
+sce01230  Biosynthesis of amino acids 
+sce03018  RNA degradation 
+sce04011  MAPK signaling pathway - yeast 
+sce04070  Phosphatidylinositol signaling system 
+sce04113  Meiosis - yeast 
+sce04122  Sulfur relay system 
+sce04138  Autophagy - yeast 
+sce04145  Phagosome 
+sce04146  Peroxisome 
+sce04213  Longevity regulating pathway - multiple species 

@@ -13,11 +13,11 @@
 ##        The script will loop over all gct files in gct directory and run ssGSEA on each file 
 ##        separately.
 ################################################################################################################
-setwd("R");
+setwd("");
 rm(list=ls());
 require("pacman");
 require("cmapR");
-script.dir = "R";
+script.dir = "";
 ## ##########################################################
 ##  define parameters below:
 ## ##########################################################

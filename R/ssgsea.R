@@ -1,7 +1,7 @@
 ################################################################################################################
-## Filename: ssgsea-gui.r
-## Created: September 09, 2017
-## Author(s): Karsten Krug
+## Filename: ssgsea.r
+## Created: 2020-08-26 19:14:31
+## Author(s): Modified by Mahdi Jalili (origin by Karsten Krug)
 ##
 ## Purpose: 
 ##      - Wrapper to ssGSEA script to perform single sample Gene Set Enrichment analysis.
@@ -12,13 +12,12 @@
 ##          - R-GUI: drag and drop this file into an R-GUI window
 ##        The script will loop over all gct files in gct directory and run ssGSEA on each file 
 ##        separately.
-##         
 ################################################################################################################
-#setwd("D:/MyWorks/ssGSEA/Matlab/Yeast/ssGSEA/R");
+setwd("R");
 rm(list=ls());
 require("pacman");
 require("cmapR");
-script.dir = "D:/MyWorks/ssGSEA/Matlab/Yeast/ssGSEA/R";
+script.dir = "R";
 ## ##########################################################
 ##  define parameters below:
 ## ##########################################################

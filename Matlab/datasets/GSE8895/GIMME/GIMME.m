@@ -19,23 +19,13 @@ for i=1:length(C)
 end 
 Data = DataUnique;
 clear C ia ic i idx temp DataUnique;
-
 %%
 %Normalize
-%{
-    dim = 2, then zscore uses the means and standard deviations along the rows of X.
-    A = magic(4);
-    data = zscore(A,0,1);
-    normA = data - min(data); normA = normA ./ max(normA);
-    %OR
-    normA = (A-min(A)) ./ (max(A)-min(A));
-%}
 Data = (Data-min(Data)) ./ (max(Data)-min(Data));
-save(['datasets/GSE8895/standard/Data.mat'], 'Data');
+save(['datasets/GSE8895/GIMME/Data.mat'], 'Data');
 %%
-type = 'Yeast';
-%%
-load(['models/',type,'.mat']);
+organism = 'Yeast';
+load(['models/',organism,'.mat']);
 clear expRxns;
 dataset = struct();
 dataset.genes = Data.RowNames;
@@ -46,12 +36,8 @@ for i = 1:length(Data.ColNames)
     dataset.genesexp = double(Data(:, i));
     dataset.name = expField;
     expRxns.(expField).MinMax = reactionLevels(model, dataset, @min, @max);
-    expRxns.(expField).Q25 = quantile(dataset.genesexp, 0.25);
-    expRxns.(expField).Q75 = quantile(dataset.genesexp, 0.75);
     fprintf(2, ' done.\n');
 end
-save(['datasets/GSE8895/standard/expRxns',type,'.mat'], 'expRxns');
-
+save(['datasets/GSE8895/standard/expRxns',organism,'.mat'], 'expRxns');
 %%
-dmwrite(Data, 'datasets/GSE8895/standard/Data.csv', 'Delimiter', ',');
-%%
+dmwrite(Data, 'datasets/GSE8895/GIMME/Data.csv', 'Delimiter', ',');

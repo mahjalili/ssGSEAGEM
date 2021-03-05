@@ -1,3 +1,8 @@
+% Create Reaction Expression Levels (expRxnsYeast.mat)
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% Author: Mahdi Jalili, 2021
+
 [num,txt,~] = xlsread('datasets/Grigaitis/EcoYeast_Transcriptomics_Normalized.xlsx');
 nummean = [mean(num(:,1:2),2),mean(num(:,3:4),2),mean(num(:,5:6),2),mean(num(:,7:10),2),mean(num(:,11:13),2),mean(num(:,14:15),2)];
 col = {'MA_020','MA_023','MA_027','MA_030','MA_032','MA_034'};

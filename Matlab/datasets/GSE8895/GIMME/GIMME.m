@@ -1,3 +1,8 @@
+% Create Reaction Expression Levels (expRxnsYeast.mat)
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% Author: Mahdi Jalili, 2021
+
 [num,txt,~] = xlsread('datasets/GSE8895/GSE8895.xlsx');
 nummean = [mean(num(:,1:3),2),mean(num(:,4:6),2),mean(num(:,7:9),2),mean(num(:,10:12),2)];
 col = {'Glucose', 'Ethanol', 'Acetate', 'Maltose'};
@@ -38,6 +43,6 @@ for i = 1:length(Data.ColNames)
     expRxns.(expField).MinMax = reactionLevels(model, dataset, @min, @max);
     fprintf(2, ' done.\n');
 end
-save(['datasets/GSE8895/standard/expRxns',organism,'.mat'], 'expRxns');
+save(['datasets/GSE8895/GIMME/expRxns',organism,'.mat'], 'expRxns');
 %%
 dmwrite(Data, 'datasets/GSE8895/GIMME/Data.csv', 'Delimiter', ',');

@@ -1,3 +1,16 @@
+% Create GIMME Model
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% INPUTS
+%       model - cobra model
+%       dataset - 'Grigaitis', 'GSE8895'
+%       reserverxns - reserved reactions
+%
+% OUTPUTS
+%       modelMethod - context model
+%
+% Author: Mahdi Jalili, 2021
+
 function modelMethod = call_GIMME(model, dataset, reserverxns)
 
     obj_frac = 0.9;

@@ -1,10 +1,18 @@
+% Create Contex Model
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% INPUTS
+%       model - cobra model
+%       method - 'GIMME'
+%       dataset - 'Grigaitis', 'GSE8895'
+%       reserverxns - reserved reactions
+%
+% OUTPUTS
+%       contextModel - context model
+%
+% Author: Mahdi Jalili, 2021
+
 function contextModel = call_method(model, method, dataset, reserverxns)
-
-%fprintf([dataset.name '(' method ') is in progress ... ']);
-
-fh = str2func([method '.call_' method]);
-contextModel = fh(model, dataset, reserverxns);
-
-%fprintf(2, 'Done.\n');
-
+   fh = str2func([method '.call_' method]);
+  contextModel = fh(model, dataset, reserverxns);
 end

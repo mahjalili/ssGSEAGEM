@@ -1,3 +1,8 @@
+% Make Models
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% Author: Mahdi Jalili, 2021
+
 inits;
 organism = 'Yeast';
 dataname = 'Grigaitis'; % Grigaitis, GSE8895

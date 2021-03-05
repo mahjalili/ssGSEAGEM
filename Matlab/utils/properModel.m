@@ -1,3 +1,16 @@
+% Proper Model
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% INPUTS
+%       model - cobra model
+%       dataname - 'Grigaitis', 'GSE8895'
+%       cond - database condition
+%
+% OUTPUTS
+%       pmodel - propered model
+%
+% Author: Mahdi Jalili, 2021
+
 function [pmodel] = properModel(model, dataname, cond)
     %Biomass
     model.c(find(model.c)) = 0; %'growth'

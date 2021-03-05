@@ -1,7 +1,12 @@
+% Create Subsystem Stat (subSysStatYeast.mat)
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% Author: Mahdi Jalili, 2021
+
 clear all;
-type = 'Yeast';
-%%
-load(['models/',type,'.mat']);
+organism = 'Yeast';
+
+load(['models/',organism,'.mat']);
 [subSystems,singleList] = findSubSystemsFromGenes(model);
 subSystemsGenes = ({});
 subSystemsGenes{length(subSystems),1} = [];
@@ -17,7 +22,7 @@ for i = 1:length(singleList)
         end
     end
 end
-load('datasets/standard/Data.mat');
+load('datasets/GIMME/Data.mat');
 subSystemsStat = struct();
 subSystemsStat.subsystems = subSystems';
 subSystemsStat.samples = Data.ColNames;
@@ -35,5 +40,4 @@ for i = 1:size(subSystemsGenes,1)
     end
 end
 
-save(['datasets/ssGSEAw/subSysStat',type,'.mat'], 'subSystemsStat');
-
+save(['datasets/ssGSEA/subSysStat',organism,'.mat'], 'subSystemsStat');

@@ -1,3 +1,8 @@
+% Create Reaction Expression Levels (expRxnsYeast.mat)
+% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
+%
+% Author: Mahdi Jalili, 2021
+
 clear all;
 organism = 'Yeast';
 data = readtable(['ssGSEA/ssGSEA',organism,'.csv'],'ReadRowNames',true);

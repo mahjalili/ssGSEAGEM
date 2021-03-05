@@ -5,7 +5,6 @@ The ssGSEAGEM introduced a new conceptual framework for transcriptional data int
 This framework could accurately predict metabolic phenotypes and outperform the accuracy. We believe that this framework could be adopted almost to all data integration algorithms and be enhanced their prediction power.<br>
 <img src="https://github.com/mahjalili/ssGSEAGEM/blob/main/Images/workflow.jpg?raw=true" alt="ssGSEAGEM workflow">
 <br>
-<br>
 <h3>Usage</h3>
 <b>Step 1: </b>First prepare conventional gene expression data and convert gene expression levels to reaction levels using GPR associations (Script: Matlab/datasets/GIMME).<br>
 <b>Step 2: </b>Using first step data and geneset of GEM model (Script: Matlab/ssGSEA/geneset) prepar ssGSEA scores of genesets (Script: R script).<br>
@@ -14,4 +13,4 @@ This framework could accurately predict metabolic phenotypes and outperform the 
 <br>
 <br>
 <h3>Citation</h3>
-Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Bas Teusink, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi, A conceptual framework for transcriptional data integration into a genome-scale metabolic model. 2021.
+<b>Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Bas Teusink, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi, A conceptual framework for transcriptional data integration into a genome-scale metabolic model. 2021.</b>

@@ -13,5 +13,4 @@ This framework could accurately predict metabolic phenotypes and outperform the 
 <br>
 <br>
 <h3>Citation</h3>
-<b>Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Bas Teusink, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi, Metabolic function-based normalization improves transcriptome data-driven reduction of genome-scale metabolic models. 2021.</b>
-
+<b>Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi, Metabolic function-based normalization improves transcriptome data-driven reduction of genome-scale metabolic models. 2021.</b>

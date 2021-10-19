@@ -1,5 +1,4 @@
 % Create GIMME Model
-% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
 %
 % INPUTS
 %       model - cobra model
@@ -10,6 +9,7 @@
 %       modelMethod - context model
 %
 % Author: Mahdi Jalili, 2021
+% Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi. Metabolic function-based normalization improves transcriptome data-driven reduction of genome-scale metabolic models.
 
 function modelMethod = call_GIMME(model, dataset, reserverxns)
 

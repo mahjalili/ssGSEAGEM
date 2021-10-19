@@ -1,5 +1,5 @@
+%
 % Proper Model
-% A conceptual framework for transcriptional data integration into a genome-scale metabolic model.
 %
 % INPUTS
 %       model - cobra model
@@ -10,11 +10,12 @@
 %       pmodel - propered model
 %
 % Author: Mahdi Jalili, 2021
+% Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi. Metabolic function-based normalization improves transcriptome data-driven reduction of genome-scale metabolic models.
 
 function [pmodel] = properModel(model, dataname, cond)
     %Biomass
-    model.c(find(model.c)) = 0; %'growth'
-    model.c(3413) = 1;  %'biomass pseudoreaction'
+    model.c(find(model.c)) = 0; % growth
+    model.c(3413) = 1;  % biomass pseudoreaction
     %lb
     if dataname == "Grigaitis"
         MA_020 = [2.18762135908281,5.48243868451356,0,5.56477430729108];

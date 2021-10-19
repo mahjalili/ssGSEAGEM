@@ -1,0 +1,12 @@
+## 2021-05-18 22:04:12
+gct.directory:	/gct
+output.directory:	/out
+gene.set.database:	/gmt/genesets.gmt
+sample.norm.type:	none
+weight:	0
+statistic:	area.under.RES
+output.score.type	NES
+nperm:	1000
+min.overlap:	3
+correl.type:	z.score
+run.parallel:	TRUE

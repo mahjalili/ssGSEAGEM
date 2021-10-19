@@ -1,7 +1,8 @@
 ################################################################################################################
 ## Filename: ssgsea.r
-## Created: 2020-08-26 19:14:31
-## Author(s): Modified by Mahdi Jalili (origin by Karsten Krug)
+## Created: 2021-05-18
+## Author(s): Modified by Mahdi Jalili (origin by Karsten Krug 2020-08-26 19:14:31)
+## Mahdi Jalili, Pranas Grigaitis, Martin Scharm, Olaf Wolkenhauer, and Ali Salehzadeh-Yazdi. Metabolic function-based normalization improves transcriptome data-driven reduction of genome-scale metabolic models.
 ##
 ## Purpose: 
 ##      - Wrapper to ssGSEA script to perform single sample Gene Set Enrichment analysis.
@@ -13,11 +14,10 @@
 ##        The script will loop over all gct files in gct directory and run ssGSEA on each file 
 ##        separately.
 ################################################################################################################
-setwd("");
 rm(list=ls());
 require("pacman");
 require("cmapR");
-script.dir = "";
+script.dir = getwd();
 ## ##########################################################
 ##  define parameters below:
 ## ##########################################################
@@ -39,14 +39,12 @@ extended.output     = F                   ## if TRUE the GCT files will contain 
 ## #####################################################################
 
 ## #################################
-ORGANISEM = "";
-GENESET = "genesetsYeast.gmt";
-OUTDIR = "Yeast";
+GENESET = "genesets.gmt";
 ## directory with gct files
-gct.dir <- paste0(script.dir, "/gct/", ORGANISEM);
+gct.dir <- paste0(script.dir, "/gct");
 ## directory to write output
-out.dir <- paste0(script.dir, "/out/", ORGANISEM);
-## MSigDB
+out.dir <- paste0(script.dir, "/out");
+##
 gene.set.databases <- paste0(script.dir, "/gmt/", GENESET);
 ## ######################################################################
 ##                          START
@@ -55,9 +53,6 @@ source(paste0(script.dir,'/src/ssGSEA2.0.R'));
 ## #############################################
 ## prepare output folder
 setwd(out.dir)
-date.str <- paste(OUTDIR, sep='_');
-dir.create(date.str);
-setwd(date.str);
 ## #############################################
 ## import signature database
 signat.all <- unlist(lapply(gene.set.databases, readLines));
@@ -108,16 +103,8 @@ for(i in names(gct.files)){
     gsea.res <- ssGSEA2(input.ds, gene.set.databases=gene.set.databases, sample.norm.type=sample.norm.type, weight=weight,statistic=statistic, output.score.type = output.score.type, nperm  = nperm, min.overlap  = min.overlap, correl.type = correl.type, output.prefix = paste(i), par=par, 
                         spare.cores=spare.cores, param.file=F, export.signat.gct = export.signat.gct, extended.output = extended.output )
 
-    ## save object
-    #save(gsea.res, file=paste(i, '.RData', sep=''))
 
     if(length(gct.files) > 1)
         setwd('..')
 
 }
-
-
-
-
-
-

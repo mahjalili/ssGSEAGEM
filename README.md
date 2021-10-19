@@ -6,9 +6,9 @@ This framework could accurately predict metabolic phenotypes and outperform the 
 <img src="https://github.com/mahjalili/ssGSEAGEM/blob/main/Images/workflow.png?raw=true" alt="ssGSEAGEM workflow">
 <br>
 <h3>Usage</h3>
-<b>Step 1: </b>First prepare conventional gene expression data and convert gene expression levels to reaction levels using GPR associations (Script: Matlab/datasets/GIMME).<br>
-<b>Step 2: </b>Using first step data and geneset of GEM model (Script: Matlab/ssGSEA/geneset), prepare ssGSEA scores of genesets (Script: R scripts).<br>
-<b>Step 3: </b>Using first step data and gssGSEA scores, prepare ssGSEA-GIMME scores of genesets and convert gene expression levels to reaction levels using GPR associations (Script: Matlab/datasets/ssGSEA).<br>
+<b>Step 1: </b>First prepare conventional gene expression data and convert gene expression levels to reaction levels using GPR associations (Script: Matlab/datasets/standard.m).<br>
+<b>Step 2: </b>Using first step data and geneset of GEM model (Script: Matlab/ssGSEA), prepare ssGSEA scores of genesets (Script: R scripts).<br>
+<b>Step 3: </b>Using first step data and ssGSEA scores, prepare ssGSEA-GIMME scores of genesets and convert gene expression levels to reaction levels using GPR associations (Script: Matlab/datasets/ssGSEA).<br>
 <b>Step 4: </b>Make models by integrate GEM model (Matlab/models) and reaction expression levels provided by previous steps (Script: Matlab/makemodel).
 <br>
 <br>
